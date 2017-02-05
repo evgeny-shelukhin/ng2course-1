@@ -1,0 +1,58 @@
+<div class="element-bg-img"><img src="{{activeHotel?.imagesActive?.large}}" alt="{{activeHotel?.name}}" class="img-responsive"></div>
+<div class="element-left-bottom">
+  <div class="ele-strip">
+    <ul>
+      <li class="anc-bor"><a href="#">The strangest hotels</a></li>
+    </ul>
+  </div>
+  <div class="village">
+    <h3>Sweden</h3>
+    <span class="line"> </span>
+    <div class="activity_box">
+      <div class="scrollbar" id="style-2">
+        <div class="activity-row">
+          <div class="activity-desc">
+            <h5 class="clickable" (click)="toggleActiveHotel(hotels[0])">{{hotels[0].name}}</h5>
+            {{hotels[0].address}}
+            <h6>{{hotels[0].phone}}</h6>
+          </div>
+          <div class="activity-img">
+            <ul>
+              <li><img src='{{hotels[0].images.small[0]}}' alt="{{hotels[0].name}}" class="clickable" (click)="toggleActiveImage(hotels[0], hotels[0].images.large[0], hotels[0].images.small[0])"/></li>
+              <li><img src='{{hotels[0].images.small[1]}}' alt="{{hotels[0].name}}" class="clickable" (click)="toggleActiveImage(hotels[0], hotels[0].images.large[1], hotels[0].images.small[1])"/></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="activity-row">
+          <div class="activity-desc">
+            <h5 class="clickable" (click)="toggleActiveHotel(hotels[1])">{{hotels[1].name}}</h5>
+            {{hotels[1].address}}
+            <h6>{{hotels[1].phone}}</h6>
+          </div>
+          <div class="activity-img">
+            <ul>
+              <li><img src='{{hotels[1].images.small[0]}}' alt="{{hotels[1].name}}" class="clickable" (click)="toggleActiveImage(hotels[1], hotels[1].images.large[0], hotels[1].images.small[0])"/></li>
+              <li><img src='{{hotels[1].images.small[1]}}' alt="{{hotels[1].name}}" class="clickable" (click)="toggleActiveImage(hotels[1], hotels[1].images.large[1], hotels[1].images.small[1])"/></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="activity-row">
+          <div class="activity-desc">
+            <h5 class="clickable" (click)="toggleActiveHotel(hotels[2])">{{hotels[2].name}}</h5>
+            {{hotels[2].address}}
+            <h6>{{hotels[2].phone}}</h6>
+          </div>
+          <div class="activity-img">
+            <ul>
+              <li><img src='{{hotels[2].images.small[0]}}' alt="{{hotels[2].name}}" class="clickable" (click)="toggleActiveImage(hotels[2], hotels[2].images.large[0], hotels[2].images.small[0])"/></li>
+              <li><img src='{{hotels[2].images.small[1]}}' alt="{{hotels[2].name}}" class="clickable" (click)="toggleActiveImage(hotels[2], hotels[2].images.large[1], hotels[2].images.small[1])"/></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
