@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+
+<div class="element">
+  <div class="element-left">
+    <course-widget-hotel [hotels]="hotels"
+                         [activeHotel]="activeHotel"
+                         (updateActiveHotel)="activeHotel = handleActiveHotelUpdated($event)"
+                         (updateActiveImage)="activeHotel.imagesActive = handleActiveImageUpdated($event)"
+    ></course-widget-hotel>
+  </div>
+  <div class="element-right">
+    <course-widget-weather [activeHotel]="activeHotel"></course-widget-weather>
+    <course-widget-social [activeHotel]="activeHotel"></course-widget-social>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="copy-right">
+  <p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+</div>

@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WidgetHotelComponent } from './widget-hotel/widget-hotel.component';
+import { WidgetWeatherComponent } from './widget-weather/widget-weather.component';
+import { WidgetSocialComponent } from './widget-social/widget-social.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WidgetHotelComponent,
+    WidgetWeatherComponent,
+    WidgetSocialComponent
   ],
   imports: [
     BrowserModule,
