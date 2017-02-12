@@ -3,8 +3,12 @@ interface activeHotel {
   images: activeHotelimages
   imagesActive: activeHotelimagesActive;
   address: string;
+  city: string;
   phone: string;
-  temperature: string;
+  temperatureAir: string;
+  temperatureWater: string;
+  followers: number;
+  following: number;
 }
 
 interface activeHotelimages {

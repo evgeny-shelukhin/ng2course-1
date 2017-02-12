@@ -18,7 +18,7 @@ export class WidgetHotelComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleActiveHotel: any = (hotel: activeHotel) => {
+  toggleActiveHotel = (hotel: activeHotel) => {
     this.activeHotel = hotel;
     this.updateActiveHotel.emit(this.activeHotel);
   };

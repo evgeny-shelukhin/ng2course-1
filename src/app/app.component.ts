@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'Hot Weather Widget';
 
-  hotels: Array<any> = [
+  hotels: Array<activeHotel> = [
     {
       name: 'Treehotel',
       images: {
