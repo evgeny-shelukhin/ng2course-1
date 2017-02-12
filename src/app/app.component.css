@@ -84,6 +84,12 @@ h1 {
 .ele-strip ul li a{
   font-size:1em;
   color: #fff;
+  cursor: pointer;
+}
+.ele-strip ul li a.active {
+  font-weight: 500;
+  color: #000;
+  transition: color .7s;
 }
 /*--teddy-bear--*/
 .teddy-bear {

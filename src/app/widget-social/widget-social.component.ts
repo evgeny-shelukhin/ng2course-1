@@ -9,7 +9,8 @@ export class WidgetSocialComponent implements OnInit {
 
   @Input() activeHotel: activeHotel;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

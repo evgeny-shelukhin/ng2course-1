@@ -13,10 +13,18 @@ export class WidgetHotelComponent implements OnInit {
   @Output() updateActiveHotel:EventEmitter<any> = new EventEmitter();
   @Output() updateActiveImage:EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  selectedCity: string = 'none';
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
+  filterHotels = (hotel: activeHotel, city: string) => {
+    this.toggleActiveHotel(hotel);
+    this.selectedCity = city;
+  };
 
   toggleActiveHotel = (hotel: activeHotel) => {
     this.activeHotel = hotel;

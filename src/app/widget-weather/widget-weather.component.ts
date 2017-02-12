@@ -9,7 +9,8 @@ export class WidgetWeatherComponent implements OnInit {
 
   @Input() activeHotel: activeHotel;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
